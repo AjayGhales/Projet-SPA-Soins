@@ -71,6 +71,8 @@ public class PanneauConnexion extends JPanel {
         gb.setConstraints(connexion,c);
         panneauLog.add(connexion);
         
+        GestionConnexion gC = new GestionConnexion();
+        connexion.addActionListener(gC);
                
         this.add(panneauLog, BorderLayout.SOUTH);
       //  this.add(panneauBouton);
@@ -80,11 +82,15 @@ public class PanneauConnexion extends JPanel {
     {
         public void actionPerformed(ActionEvent e)
         {
-            if(e.getSource() == connexion)
+           if(e.getSource() == connexion)
             {
-                if(tLog.getText() == "Admin" && tMdp.getText()== "Admin")
+                if(tLog.getText().equals("Admin") && tMdp.getPassword().equals("Admin"))
                 {
-                    
+                    JOptionPane.showMessageDialog((null),"Vous êtes bien connecté"," ",JOptionPane.INFORMATION_MESSAGE);
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog((null),"Vous vous êtes tromper"," ",JOptionPane.INFORMATION_MESSAGE);
                 }
             } 
         }
