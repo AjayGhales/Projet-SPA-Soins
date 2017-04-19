@@ -19,7 +19,7 @@ public class ThreadImage extends Thread{
         while(true)
         {
             try{
-                Thread.sleep(6);
+                Thread.sleep(8);
                 paneI.bouge();
                 paneI.repaint();                
             }catch(InterruptedException e)
