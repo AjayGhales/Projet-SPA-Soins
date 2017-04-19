@@ -16,14 +16,10 @@ import java.awt.Image;
  * @author justi
  */
 public class FenetreConnexion extends JFrame{
-    
-    //private Toolkit windowToolKit = getToolkit();
-    //private Dimension windowSize = windowToolKit.getScreenSize();
+   
     private Container cont;
     private Image icone = Toolkit.getDefaultToolkit().getImage("empreinte.jpg");
   
-   
-    
     public FenetreConnexion()
     {
         super("SPA");
