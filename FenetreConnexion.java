@@ -17,28 +17,33 @@ import java.awt.Image;
  */
 public class FenetreConnexion extends JFrame{
     
-    private Toolkit windowToolKit = getToolkit();
-    private Dimension windowSize = windowToolKit.getScreenSize();
+    //private Toolkit windowToolKit = getToolkit();
+    //private Dimension windowSize = windowToolKit.getScreenSize();
     private Container cont;
     private Image icone = Toolkit.getDefaultToolkit().getImage("empreinte.jpg");
+  
+   
     
     public FenetreConnexion()
     {
         super("SPA");
-        setBounds(1,1,windowSize.width,windowSize.height);
+        setBounds(350,150,1000,600);
         
         this.addWindowListener(new WindowAdapter()
         {public void windowClosing(WindowEvent e){System.exit(0);}});
-             
-        
+            
         PanneauConnexion pc = new PanneauConnexion();
+        PanneauImage pane = new PanneauImage("animation-2.png");
         
-        cont = getContentPane();  
-        cont.add(pc);        
+        cont = getContentPane(); 
+        cont.setLayout(new BorderLayout());
+        
+        cont.add(pc, BorderLayout.NORTH);    
+        cont.add(pane, BorderLayout.CENTER);
+       
+     
         
         this.setIconImage(icone);
         setVisible(true);
-    }
-    
-  
+    } 
 }
