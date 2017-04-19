@@ -84,7 +84,8 @@ public class PanneauConnexion extends JPanel {
         {
            if(e.getSource() == connexion)
             {
-                if(tLog.getText().equals("Admin") && tMdp.getPassword().equals("Admin"))
+                String mdp = new String(tMdp.getPassword());               
+                if(tLog.getText().toString().equals("Admin") && mdp.equals("Admin"))
                 {
                     JOptionPane.showMessageDialog((null),"Vous êtes bien connecté"," ",JOptionPane.INFORMATION_MESSAGE);
                 }
