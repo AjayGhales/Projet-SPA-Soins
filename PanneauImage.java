@@ -34,27 +34,31 @@ public class PanneauImage extends JPanel
     }
     public void bouge()
     {
-          
-        if(y !=  this.getTailleY())
-        {
-            y+=1;
-     
+       if( y == this.getTailleY() && x == this.getTailleX())
+        {   
+            x += 0;
+            y += 0;
         }
-        if( x !=  this.getTailleX())
+        else
         {
-            x+=1;
+            if(y <  this.getTailleY())
+            {
+                y+=1;
+
+            }
+            else
+            {
+                y -=1;
+            }
+            if( x <  this.getTailleX())
+            {
+                x+=1;
+            }
+            else
+            {
+                x-=1;
+            }
         }
-        x += 0;
-        y += 0;
-        
-        System.out.println("taille réel fenetre : " +this.getHeight());
-        System.out.println("taille" +this.getTailleY());
-        System.out.println("x :" +x);
-        System.out.println("y :" +y+ "\n");
-    }
-    public Image getImage()
-    {
-        return img;
     }
     public int getTailleY()
     {
