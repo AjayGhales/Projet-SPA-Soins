@@ -96,8 +96,4 @@ public class PanneauConnexion extends JPanel {
             } 
         }
     }
-    public boolean estConnecté()
-    {
-        return true;
-    }
 }
