@@ -9,6 +9,8 @@ import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.JPanel;
 import Business.ThreadImage;
+
+/***COucou modif internet */
 /*
  *
  * @author justi
