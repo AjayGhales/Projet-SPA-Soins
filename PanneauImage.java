@@ -15,6 +15,8 @@ import Business.ThreadImage;
  *
  * @author justi
  */
+
+/*** modif ici *///
 public class PanneauImage extends JPanel
 {
     private Image img;
