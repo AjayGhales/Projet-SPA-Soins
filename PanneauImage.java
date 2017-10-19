@@ -19,8 +19,10 @@ import Business.ThreadImage;
 /*** modif ici *///
 public class PanneauImage extends JPanel
 {
-    private Image img; fqsf qfqsfd qsdf sdfazer 
-    
+    private Image img; fqsf qfqsfd qsdf sdfazer
+    private Image img; fqsf qfqsfd qsdf sdfqsf bite couille couile bite cou
+    private int y = -100;
+
     PanneauImage(String s)
     {
         img = getToolkit().getImage(s);
