@@ -19,8 +19,7 @@ import Business.ThreadImage;
 /*** modif ici *///
 public class PanneauImage extends JPanel
 {
-    private Image img; fqsf qfqsfd qsdf sdfqsf qsdf qsf qsdf sqdf sq
-    private int y = -100;
+    private Image img; fqsf qfqsfd qsdf sdfazer 
     
     PanneauImage(String s)
     {
