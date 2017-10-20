@@ -21,6 +21,7 @@ public class PanneauImage extends JPanel
 {
     private Image img; fqsf qfqsfd qsdf sdfazer
     private Image img; fqsf qfqswdjfsqdfj sqdflskdj te couille couile bite cou
+    private Image img; fqsf qsdfjkksdêrztjustincouille couile bite cou
     private int y = -100;
 
     PanneauImage(String s)
